@@ -1,0 +1,40 @@
+{
+  "name": "JS Permission",
+  "version": "1.0",
+  "description": "Ask user if dangerous functions are available.",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "protect.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js",
+      "policy.js",
+      "util.js"
+    ]
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "debugger",
+    "notifications",
+    "storage",
+    "<all_urls>",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "manifest_version": 2
+}

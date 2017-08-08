@@ -1,0 +1,14 @@
+{
+  "function": {
+    "window.performance.now": {
+      "action": "ask",
+      "return": "0"
+    }
+  },
+  "object": {
+    "window.*Array": {
+      "action": "modify",
+      "file": "array_aslr.js"
+    }
+  }
+}

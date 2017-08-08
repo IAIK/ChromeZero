@@ -1,0 +1,25 @@
+{
+  "function": {
+    "window.performance.now": {
+      "action": "block"
+    },
+    "navigator.getBattery": {
+      "action": "block"
+    },
+    "window.addEventListener": {
+      "modify": "sensor_block.js"
+    }
+  },
+  "object": {
+    "window.*Array": {
+      "action": "modify",
+      "file": "array_aslr_access_nonlinear.js"
+    },
+    "window.Worker": {
+      "action": "block"
+    },
+    "window.SharedArrayBuffer": {
+      "action": "block"
+    }
+  }
+}

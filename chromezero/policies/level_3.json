@@ -1,0 +1,29 @@
+{
+  "function": {
+    "window.performance.now": {
+      "action": "modify",
+      "file": "fuzzy.js"
+    },
+    "navigator.getBattery": {
+      "action": "modify",
+      "file": "battery_fix.js"
+    },
+    "sensor": {
+      "action": "modify",
+      "file": "sensor_null.js"
+    }
+  },
+  "object": {
+    "window.*Array": {
+      "action": "modify",
+      "file": "array_aslr_access.js"
+    },
+    "window.Worker": {
+      "action": "modify",
+      "file": "worker_polyfill.js"
+    },
+    "window.SharedArrayBuffer": {
+      "action": "block"
+    }
+  }
+}

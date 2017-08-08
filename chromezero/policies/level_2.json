@@ -1,0 +1,26 @@
+{
+  "function": {
+    "window.performance.now": {
+      "action": "modify",
+      "return": "Math.floor(window.performance.now() / 100.0) * 100.0"
+    },
+    "navigator.getBattery": {
+      "action": "ask",
+      "file": "battery_fix.js"
+    },
+    "window.addEventListener": {
+      "action": "ask",
+      "file": "sensor_null.js"
+    }
+  },
+  "object": {
+    "window.*Array": {
+      "action": "modify",
+      "file": "array_preload.js"
+    },
+    "window.Worker": {
+      "action": "modify",
+      "file": "worker_delay.js"
+    }
+  }
+}
