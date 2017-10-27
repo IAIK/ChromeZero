@@ -8,7 +8,7 @@ The policies allow to quickly adapt the permission system to protect against any
 
 The following videos show two short demos of *Chrome Zero*.
 
-The first video demonstrates a cache attack mounted from JavaScript. Without *Chrome Zero*, cache hits and misses can be clearly distinguished in the histogram. Enabling *Chrome Zero* prevents this microarchitectural side-channel attack such that an attacker cannot distinguish cache hits and misses anymore.
+The first video demonstrates an interrupt attack mounted from JavaScript. Without *Chrome Zero*, interrupts can be clearly seen in the trace. Enabling *Chrome Zero* prevents this microarchitectural side-channel attack such that an attacker cannot detect interrupts anymore.
 
 ![interrupt.js Demo](./_images/interruptjs.gif)
 
