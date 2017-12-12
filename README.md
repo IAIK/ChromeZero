@@ -1,5 +1,9 @@
 # Chrome Zero
 
+> **Disclaimer**: This is a research project and not meant to be used in production. 
+> We would be happy if someone would build a fully functional extension implementing all features of JavaScript Zero.
+> See the NDSS'18 paper [JavaScript Zero: Real JavaScript and Zero Side-Channel Attacks](https://misc0110.net/web/files/jszero.pdf) for more details.
+
 *Chrome Zero* is a Google Chrome extension to protect users from microarchitectural and side-channel attacks.
 
 *ChromeZero* implements *JavaScript Zero*, a fine-grained policy-based system which allows to change the behavior of standard JavaScript interfaces and functions.
